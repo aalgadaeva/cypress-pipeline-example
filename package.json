@@ -15,10 +15,11 @@
     "build": "next build",
     "start": "next start",
     "cypress-run": "cypress run",
+    "cypress:open": "cypress open",
     "int-test": "start-server-and-test next http://localhost:3000 cypress-run"
   },
   "devDependencies": {
-    "cypress": "^6.0.1",
+    "cypress": "^6.9.1",
     "start-server-and-test": "^1.11.6"
   }
 }
