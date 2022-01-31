@@ -10,18 +10,14 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
-
+  build-and-test:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v2
     
-    - name: Run Cypress tests
-      uses: cypress-io/github-action@v2
-      with:
+      - name: Run Cypress tests
+        uses: cypress-io/github-action@v2
+        with:
+          start: npm start
         
-    - run: npm install
-    - run: npm run build --if-present
-    - run: npm run int-test
