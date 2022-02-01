@@ -16,7 +16,7 @@
     "start": "next start",
     "cypress-run": "cypress run",
     "cypress:open": "cypress open",
-    "int-test": "start-server-and-test next https://xworks.net/ cypress-run"
+    "int-test": "start-server-and-test next http://localhost:3000 cypress-run"
   },
   "devDependencies": {
     "cypress": "^9.3.1",
